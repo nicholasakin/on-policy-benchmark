@@ -142,6 +142,11 @@ class MPERunner(Runner):
     def eval(self, total_num_steps):
         eval_episode_rewards = []
         eval_obs = self.eval_envs.reset()
+        # success[env] = 1 if the scenario's `occupied_landmarks == num_landmarks` info flag
+        # fired on any step of the episode, mirroring the PCMA-reproduction env's convention
+        # of ending the episode the instant that condition is reached rather than only
+        # checking it once at the fixed horizon's last step.
+        eval_success = np.zeros(self.n_eval_rollout_threads, dtype=np.float32)
 
         eval_rnn_states = np.zeros((self.n_eval_rollout_threads, *self.buffer.rnn_states.shape[2:]), dtype=np.float32)
         eval_masks = np.ones((self.n_eval_rollout_threads, self.num_agents, 1), dtype=np.float32)
@@ -170,6 +175,9 @@ class MPERunner(Runner):
             # Obser reward and next obs
             eval_obs, eval_rewards, eval_dones, eval_infos = self.eval_envs.step(eval_actions_env)
             eval_episode_rewards.append(eval_rewards)
+            for env_i, agent_infos in enumerate(eval_infos):
+                if any(bool(info.get('success', 0.0)) for info in agent_infos):
+                    eval_success[env_i] = 1.0
 
             eval_rnn_states[eval_dones == True] = np.zeros(((eval_dones == True).sum(), self.recurrent_N, self.hidden_size), dtype=np.float32)
             eval_masks = np.ones((self.n_eval_rollout_threads, self.num_agents, 1), dtype=np.float32)
@@ -178,8 +186,10 @@ class MPERunner(Runner):
         eval_episode_rewards = np.array(eval_episode_rewards)
         eval_env_infos = {}
         eval_env_infos['eval_average_episode_rewards'] = np.sum(np.array(eval_episode_rewards), axis=0)
+        eval_env_infos['eval_success_rate'] = eval_success
         eval_average_episode_rewards = np.mean(eval_env_infos['eval_average_episode_rewards'])
         print("eval average episode rewards of agent: " + str(eval_average_episode_rewards))
+        print("eval success rate: " + str(np.mean(eval_success)))
         self.log_env(eval_env_infos, total_num_steps)
 
     @torch.no_grad()

@@ -131,8 +131,7 @@ class MultiAgentEnv(gym.Env):
             done_n.append(self._get_done(agent))
             info = {'individual_reward': self._get_reward(agent)}
             env_info = self._get_info(agent)
-            if 'fail' in env_info.keys():
-                info['fail'] = env_info['fail']
+            info.update(env_info)
             info_n.append(info)
 
         # all agents get total reward in cooperative case, if shared reward, all agents have the same reward, and reward is sum

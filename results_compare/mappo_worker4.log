@@ -1,0 +1,1677 @@
+u are choosing to use rmappo, we set use_recurrent_policy to be True
+choose to use gpu...
+obs_space:  [Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (18,), float32), Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (18,), float32), Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (18,), float32)]
+share_obs_space:  [Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (54,), float32), Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (54,), float32), Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (54,), float32)]
+act_space:  [Discrete(5), Discrete(5), Discrete(5)]
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 0/200000 episodes, total num timesteps 100/20000000, FPS 329.
+
+average episode rewards is -206.97360229492188
+eval average episode rewards of agent: -235.76800098004395
+eval success rate: 0.0
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 5/200000 episodes, total num timesteps 600/20000000, FPS 770.
+
+average episode rewards is -188.856201171875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 10/200000 episodes, total num timesteps 1100/20000000, FPS 939.
+
+average episode rewards is -213.12010192871094
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 15/200000 episodes, total num timesteps 1600/20000000, FPS 1025.
+
+average episode rewards is -231.31356811523438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 20/200000 episodes, total num timesteps 2100/20000000, FPS 1076.
+
+average episode rewards is -229.3067626953125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 25/200000 episodes, total num timesteps 2600/20000000, FPS 1107.
+
+average episode rewards is -173.7394561767578
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 30/200000 episodes, total num timesteps 3100/20000000, FPS 1127.
+
+average episode rewards is -201.91250610351562
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 35/200000 episodes, total num timesteps 3600/20000000, FPS 1146.
+
+average episode rewards is -274.08038330078125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 40/200000 episodes, total num timesteps 4100/20000000, FPS 1158.
+
+average episode rewards is -180.08152770996094
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 45/200000 episodes, total num timesteps 4600/20000000, FPS 1166.
+
+average episode rewards is -204.67674255371094
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 50/200000 episodes, total num timesteps 5100/20000000, FPS 1172.
+
+average episode rewards is -199.33169555664062
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 55/200000 episodes, total num timesteps 5600/20000000, FPS 1183.
+
+average episode rewards is -205.4938507080078
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 60/200000 episodes, total num timesteps 6100/20000000, FPS 1192.
+
+average episode rewards is -217.02676391601562
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 65/200000 episodes, total num timesteps 6600/20000000, FPS 1199.
+
+average episode rewards is -210.82894897460938
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 70/200000 episodes, total num timesteps 7100/20000000, FPS 1206.
+
+average episode rewards is -235.9069061279297
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 75/200000 episodes, total num timesteps 7600/20000000, FPS 1213.
+
+average episode rewards is -219.4622344970703
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 80/200000 episodes, total num timesteps 8100/20000000, FPS 1220.
+
+average episode rewards is -232.0234375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 85/200000 episodes, total num timesteps 8600/20000000, FPS 1223.
+
+average episode rewards is -227.5896759033203
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 90/200000 episodes, total num timesteps 9100/20000000, FPS 1226.
+
+average episode rewards is -169.95748901367188
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 95/200000 episodes, total num timesteps 9600/20000000, FPS 1229.
+
+average episode rewards is -192.0927734375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 100/200000 episodes, total num timesteps 10100/20000000, FPS 1231.
+
+average episode rewards is -200.599365234375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 105/200000 episodes, total num timesteps 10600/20000000, FPS 1233.
+
+average episode rewards is -198.29078674316406
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 110/200000 episodes, total num timesteps 11100/20000000, FPS 1235.
+
+average episode rewards is -230.55477905273438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 115/200000 episodes, total num timesteps 11600/20000000, FPS 1237.
+
+average episode rewards is -188.02890014648438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 120/200000 episodes, total num timesteps 12100/20000000, FPS 1239.
+
+average episode rewards is -214.09327697753906
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 125/200000 episodes, total num timesteps 12600/20000000, FPS 1241.
+
+average episode rewards is -220.4071044921875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 130/200000 episodes, total num timesteps 13100/20000000, FPS 1241.
+
+average episode rewards is -198.11196899414062
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 135/200000 episodes, total num timesteps 13600/20000000, FPS 1243.
+
+average episode rewards is -230.4535369873047
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 140/200000 episodes, total num timesteps 14100/20000000, FPS 1244.
+
+average episode rewards is -244.37994384765625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 145/200000 episodes, total num timesteps 14600/20000000, FPS 1246.
+
+average episode rewards is -232.42030334472656
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 150/200000 episodes, total num timesteps 15100/20000000, FPS 1247.
+
+average episode rewards is -225.24960327148438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 155/200000 episodes, total num timesteps 15600/20000000, FPS 1247.
+
+average episode rewards is -207.96275329589844
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 160/200000 episodes, total num timesteps 16100/20000000, FPS 1246.
+
+average episode rewards is -229.77145385742188
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 165/200000 episodes, total num timesteps 16600/20000000, FPS 1247.
+
+average episode rewards is -230.98495483398438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 170/200000 episodes, total num timesteps 17100/20000000, FPS 1248.
+
+average episode rewards is -202.4822540283203
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 175/200000 episodes, total num timesteps 17600/20000000, FPS 1249.
+
+average episode rewards is -204.55335998535156
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 180/200000 episodes, total num timesteps 18100/20000000, FPS 1250.
+
+average episode rewards is -187.21926879882812
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 185/200000 episodes, total num timesteps 18600/20000000, FPS 1250.
+
+average episode rewards is -237.0047149658203
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 190/200000 episodes, total num timesteps 19100/20000000, FPS 1251.
+
+average episode rewards is -207.0871124267578
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 195/200000 episodes, total num timesteps 19600/20000000, FPS 1252.
+
+average episode rewards is -186.3670654296875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 200/200000 episodes, total num timesteps 20100/20000000, FPS 1253.
+
+average episode rewards is -218.7364501953125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 205/200000 episodes, total num timesteps 20600/20000000, FPS 1253.
+
+average episode rewards is -190.631591796875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 210/200000 episodes, total num timesteps 21100/20000000, FPS 1254.
+
+average episode rewards is -230.63430786132812
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 215/200000 episodes, total num timesteps 21600/20000000, FPS 1254.
+
+average episode rewards is -225.65646362304688
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 220/200000 episodes, total num timesteps 22100/20000000, FPS 1254.
+
+average episode rewards is -206.10528564453125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 225/200000 episodes, total num timesteps 22600/20000000, FPS 1255.
+
+average episode rewards is -213.2342529296875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 230/200000 episodes, total num timesteps 23100/20000000, FPS 1256.
+
+average episode rewards is -201.64976501464844
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 235/200000 episodes, total num timesteps 23600/20000000, FPS 1257.
+
+average episode rewards is -205.07778930664062
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 240/200000 episodes, total num timesteps 24100/20000000, FPS 1258.
+
+average episode rewards is -183.8962860107422
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 245/200000 episodes, total num timesteps 24600/20000000, FPS 1258.
+
+average episode rewards is -206.75804138183594
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 250/200000 episodes, total num timesteps 25100/20000000, FPS 1257.
+
+average episode rewards is -196.39230346679688
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 255/200000 episodes, total num timesteps 25600/20000000, FPS 1258.
+
+average episode rewards is -196.41921997070312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 260/200000 episodes, total num timesteps 26100/20000000, FPS 1258.
+
+average episode rewards is -193.4952850341797
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 265/200000 episodes, total num timesteps 26600/20000000, FPS 1258.
+
+average episode rewards is -177.9878692626953
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 270/200000 episodes, total num timesteps 27100/20000000, FPS 1258.
+
+average episode rewards is -192.35476684570312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 275/200000 episodes, total num timesteps 27600/20000000, FPS 1258.
+
+average episode rewards is -196.3015899658203
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 280/200000 episodes, total num timesteps 28100/20000000, FPS 1259.
+
+average episode rewards is -197.41493225097656
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 285/200000 episodes, total num timesteps 28600/20000000, FPS 1258.
+
+average episode rewards is -210.26254272460938
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 290/200000 episodes, total num timesteps 29100/20000000, FPS 1259.
+
+average episode rewards is -181.98876953125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 295/200000 episodes, total num timesteps 29600/20000000, FPS 1259.
+
+average episode rewards is -187.88858032226562
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 300/200000 episodes, total num timesteps 30100/20000000, FPS 1259.
+
+average episode rewards is -251.93760681152344
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 305/200000 episodes, total num timesteps 30600/20000000, FPS 1259.
+
+average episode rewards is -194.9228515625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 310/200000 episodes, total num timesteps 31100/20000000, FPS 1260.
+
+average episode rewards is -206.0885009765625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 315/200000 episodes, total num timesteps 31600/20000000, FPS 1259.
+
+average episode rewards is -206.7361297607422
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 320/200000 episodes, total num timesteps 32100/20000000, FPS 1260.
+
+average episode rewards is -178.28944396972656
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 325/200000 episodes, total num timesteps 32600/20000000, FPS 1260.
+
+average episode rewards is -191.42611694335938
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 330/200000 episodes, total num timesteps 33100/20000000, FPS 1261.
+
+average episode rewards is -194.34451293945312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 335/200000 episodes, total num timesteps 33600/20000000, FPS 1261.
+
+average episode rewards is -213.3177947998047
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 340/200000 episodes, total num timesteps 34100/20000000, FPS 1261.
+
+average episode rewards is -179.2353515625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 345/200000 episodes, total num timesteps 34600/20000000, FPS 1261.
+
+average episode rewards is -175.02430725097656
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 350/200000 episodes, total num timesteps 35100/20000000, FPS 1260.
+
+average episode rewards is -230.8615264892578
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 355/200000 episodes, total num timesteps 35600/20000000, FPS 1260.
+
+average episode rewards is -197.56008911132812
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 360/200000 episodes, total num timesteps 36100/20000000, FPS 1261.
+
+average episode rewards is -167.9704132080078
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 365/200000 episodes, total num timesteps 36600/20000000, FPS 1261.
+
+average episode rewards is -201.0052032470703
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 370/200000 episodes, total num timesteps 37100/20000000, FPS 1261.
+
+average episode rewards is -243.4561004638672
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 375/200000 episodes, total num timesteps 37600/20000000, FPS 1261.
+
+average episode rewards is -183.3673095703125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 380/200000 episodes, total num timesteps 38100/20000000, FPS 1261.
+
+average episode rewards is -210.31105041503906
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 385/200000 episodes, total num timesteps 38600/20000000, FPS 1261.
+
+average episode rewards is -173.10560607910156
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 390/200000 episodes, total num timesteps 39100/20000000, FPS 1261.
+
+average episode rewards is -167.4115447998047
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 395/200000 episodes, total num timesteps 39600/20000000, FPS 1261.
+
+average episode rewards is -207.1656036376953
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 400/200000 episodes, total num timesteps 40100/20000000, FPS 1262.
+
+average episode rewards is -213.8142852783203
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 405/200000 episodes, total num timesteps 40600/20000000, FPS 1262.
+
+average episode rewards is -193.96099853515625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 410/200000 episodes, total num timesteps 41100/20000000, FPS 1262.
+
+average episode rewards is -210.92428588867188
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 415/200000 episodes, total num timesteps 41600/20000000, FPS 1262.
+
+average episode rewards is -208.9315185546875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 420/200000 episodes, total num timesteps 42100/20000000, FPS 1262.
+
+average episode rewards is -188.1595001220703
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 425/200000 episodes, total num timesteps 42600/20000000, FPS 1263.
+
+average episode rewards is -208.3007049560547
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 430/200000 episodes, total num timesteps 43100/20000000, FPS 1263.
+
+average episode rewards is -184.30213928222656
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 435/200000 episodes, total num timesteps 43600/20000000, FPS 1263.
+
+average episode rewards is -210.20761108398438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 440/200000 episodes, total num timesteps 44100/20000000, FPS 1263.
+
+average episode rewards is -202.56600952148438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 445/200000 episodes, total num timesteps 44600/20000000, FPS 1264.
+
+average episode rewards is -216.32342529296875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 450/200000 episodes, total num timesteps 45100/20000000, FPS 1264.
+
+average episode rewards is -210.72116088867188
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 455/200000 episodes, total num timesteps 45600/20000000, FPS 1263.
+
+average episode rewards is -229.50830078125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 460/200000 episodes, total num timesteps 46100/20000000, FPS 1264.
+
+average episode rewards is -178.237060546875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 465/200000 episodes, total num timesteps 46600/20000000, FPS 1264.
+
+average episode rewards is -185.38458251953125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 470/200000 episodes, total num timesteps 47100/20000000, FPS 1264.
+
+average episode rewards is -237.95425415039062
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 475/200000 episodes, total num timesteps 47600/20000000, FPS 1264.
+
+average episode rewards is -239.20574951171875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 480/200000 episodes, total num timesteps 48100/20000000, FPS 1264.
+
+average episode rewards is -223.10838317871094
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 485/200000 episodes, total num timesteps 48600/20000000, FPS 1264.
+
+average episode rewards is -205.18785095214844
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 490/200000 episodes, total num timesteps 49100/20000000, FPS 1265.
+
+average episode rewards is -180.3057861328125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 495/200000 episodes, total num timesteps 49600/20000000, FPS 1264.
+
+average episode rewards is -169.38719177246094
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 500/200000 episodes, total num timesteps 50100/20000000, FPS 1264.
+
+average episode rewards is -175.099609375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 505/200000 episodes, total num timesteps 50600/20000000, FPS 1264.
+
+average episode rewards is -189.589599609375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 510/200000 episodes, total num timesteps 51100/20000000, FPS 1265.
+
+average episode rewards is -188.2581024169922
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 515/200000 episodes, total num timesteps 51600/20000000, FPS 1265.
+
+average episode rewards is -198.47779846191406
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 520/200000 episodes, total num timesteps 52100/20000000, FPS 1265.
+
+average episode rewards is -192.22109985351562
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 525/200000 episodes, total num timesteps 52600/20000000, FPS 1265.
+
+average episode rewards is -239.6096649169922
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 530/200000 episodes, total num timesteps 53100/20000000, FPS 1266.
+
+average episode rewards is -207.32443237304688
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 535/200000 episodes, total num timesteps 53600/20000000, FPS 1265.
+
+average episode rewards is -210.62490844726562
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 540/200000 episodes, total num timesteps 54100/20000000, FPS 1265.
+
+average episode rewards is -175.64956665039062
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 545/200000 episodes, total num timesteps 54600/20000000, FPS 1266.
+
+average episode rewards is -193.75341796875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 550/200000 episodes, total num timesteps 55100/20000000, FPS 1266.
+
+average episode rewards is -242.98403930664062
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 555/200000 episodes, total num timesteps 55600/20000000, FPS 1265.
+
+average episode rewards is -199.7947540283203
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 560/200000 episodes, total num timesteps 56100/20000000, FPS 1266.
+
+average episode rewards is -211.3055877685547
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 565/200000 episodes, total num timesteps 56600/20000000, FPS 1265.
+
+average episode rewards is -186.2928466796875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 570/200000 episodes, total num timesteps 57100/20000000, FPS 1265.
+
+average episode rewards is -203.48049926757812
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 575/200000 episodes, total num timesteps 57600/20000000, FPS 1265.
+
+average episode rewards is -198.9407501220703
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 580/200000 episodes, total num timesteps 58100/20000000, FPS 1266.
+
+average episode rewards is -216.15113830566406
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 585/200000 episodes, total num timesteps 58600/20000000, FPS 1266.
+
+average episode rewards is -203.0071258544922
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 590/200000 episodes, total num timesteps 59100/20000000, FPS 1266.
+
+average episode rewards is -198.0303497314453
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 595/200000 episodes, total num timesteps 59600/20000000, FPS 1266.
+
+average episode rewards is -182.31613159179688
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 600/200000 episodes, total num timesteps 60100/20000000, FPS 1266.
+
+average episode rewards is -194.26522827148438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 605/200000 episodes, total num timesteps 60600/20000000, FPS 1266.
+
+average episode rewards is -195.8291473388672
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 610/200000 episodes, total num timesteps 61100/20000000, FPS 1266.
+
+average episode rewards is -219.39773559570312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 615/200000 episodes, total num timesteps 61600/20000000, FPS 1266.
+
+average episode rewards is -159.79360961914062
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 620/200000 episodes, total num timesteps 62100/20000000, FPS 1267.
+
+average episode rewards is -192.9857177734375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 625/200000 episodes, total num timesteps 62600/20000000, FPS 1267.
+
+average episode rewards is -202.47607421875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 630/200000 episodes, total num timesteps 63100/20000000, FPS 1266.
+
+average episode rewards is -210.933349609375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 635/200000 episodes, total num timesteps 63600/20000000, FPS 1266.
+
+average episode rewards is -201.58636474609375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 640/200000 episodes, total num timesteps 64100/20000000, FPS 1266.
+
+average episode rewards is -182.2874298095703
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 645/200000 episodes, total num timesteps 64600/20000000, FPS 1267.
+
+average episode rewards is -193.3099365234375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 650/200000 episodes, total num timesteps 65100/20000000, FPS 1267.
+
+average episode rewards is -197.416015625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 655/200000 episodes, total num timesteps 65600/20000000, FPS 1267.
+
+average episode rewards is -226.37400817871094
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 660/200000 episodes, total num timesteps 66100/20000000, FPS 1267.
+
+average episode rewards is -209.41009521484375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 665/200000 episodes, total num timesteps 66600/20000000, FPS 1267.
+
+average episode rewards is -287.1802673339844
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 670/200000 episodes, total num timesteps 67100/20000000, FPS 1267.
+
+average episode rewards is -224.4120330810547
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 675/200000 episodes, total num timesteps 67600/20000000, FPS 1267.
+
+average episode rewards is -168.37100219726562
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 680/200000 episodes, total num timesteps 68100/20000000, FPS 1267.
+
+average episode rewards is -202.3276824951172
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 685/200000 episodes, total num timesteps 68600/20000000, FPS 1267.
+
+average episode rewards is -181.67630004882812
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 690/200000 episodes, total num timesteps 69100/20000000, FPS 1267.
+
+average episode rewards is -231.22206115722656
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 695/200000 episodes, total num timesteps 69600/20000000, FPS 1267.
+
+average episode rewards is -184.884521484375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 700/200000 episodes, total num timesteps 70100/20000000, FPS 1267.
+
+average episode rewards is -179.10321044921875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 705/200000 episodes, total num timesteps 70600/20000000, FPS 1267.
+
+average episode rewards is -183.5419464111328
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 710/200000 episodes, total num timesteps 71100/20000000, FPS 1267.
+
+average episode rewards is -203.21595764160156
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 715/200000 episodes, total num timesteps 71600/20000000, FPS 1267.
+
+average episode rewards is -198.2388916015625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 720/200000 episodes, total num timesteps 72100/20000000, FPS 1267.
+
+average episode rewards is -159.243896484375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 725/200000 episodes, total num timesteps 72600/20000000, FPS 1267.
+
+average episode rewards is -172.62420654296875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 730/200000 episodes, total num timesteps 73100/20000000, FPS 1268.
+
+average episode rewards is -183.18060302734375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 735/200000 episodes, total num timesteps 73600/20000000, FPS 1268.
+
+average episode rewards is -179.21847534179688
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 740/200000 episodes, total num timesteps 74100/20000000, FPS 1268.
+
+average episode rewards is -177.84124755859375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 745/200000 episodes, total num timesteps 74600/20000000, FPS 1268.
+
+average episode rewards is -186.7845458984375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 750/200000 episodes, total num timesteps 75100/20000000, FPS 1268.
+
+average episode rewards is -179.57553100585938
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 755/200000 episodes, total num timesteps 75600/20000000, FPS 1268.
+
+average episode rewards is -182.51580810546875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 760/200000 episodes, total num timesteps 76100/20000000, FPS 1268.
+
+average episode rewards is -196.40701293945312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 765/200000 episodes, total num timesteps 76600/20000000, FPS 1268.
+
+average episode rewards is -187.0148468017578
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 770/200000 episodes, total num timesteps 77100/20000000, FPS 1268.
+
+average episode rewards is -181.5553436279297
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 775/200000 episodes, total num timesteps 77600/20000000, FPS 1268.
+
+average episode rewards is -181.4121551513672
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 780/200000 episodes, total num timesteps 78100/20000000, FPS 1268.
+
+average episode rewards is -199.60018920898438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 785/200000 episodes, total num timesteps 78600/20000000, FPS 1268.
+
+average episode rewards is -166.58761596679688
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 790/200000 episodes, total num timesteps 79100/20000000, FPS 1268.
+
+average episode rewards is -207.6768798828125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 795/200000 episodes, total num timesteps 79600/20000000, FPS 1268.
+
+average episode rewards is -176.47958374023438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 800/200000 episodes, total num timesteps 80100/20000000, FPS 1268.
+
+average episode rewards is -179.48536682128906
+eval average episode rewards of agent: -167.28337622139767
+eval success rate: 0.0
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 805/200000 episodes, total num timesteps 80600/20000000, FPS 1267.
+
+average episode rewards is -184.8682403564453
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 810/200000 episodes, total num timesteps 81100/20000000, FPS 1267.
+
+average episode rewards is -164.77609252929688
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 815/200000 episodes, total num timesteps 81600/20000000, FPS 1267.
+
+average episode rewards is -192.47640991210938
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 820/200000 episodes, total num timesteps 82100/20000000, FPS 1267.
+
+average episode rewards is -148.93222045898438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 825/200000 episodes, total num timesteps 82600/20000000, FPS 1267.
+
+average episode rewards is -184.91464233398438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 830/200000 episodes, total num timesteps 83100/20000000, FPS 1267.
+
+average episode rewards is -155.10971069335938
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 835/200000 episodes, total num timesteps 83600/20000000, FPS 1267.
+
+average episode rewards is -186.7031707763672
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 840/200000 episodes, total num timesteps 84100/20000000, FPS 1267.
+
+average episode rewards is -198.7760467529297
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 845/200000 episodes, total num timesteps 84600/20000000, FPS 1267.
+
+average episode rewards is -191.3077850341797
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 850/200000 episodes, total num timesteps 85100/20000000, FPS 1267.
+
+average episode rewards is -212.006591796875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 855/200000 episodes, total num timesteps 85600/20000000, FPS 1267.
+
+average episode rewards is -211.372802734375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 860/200000 episodes, total num timesteps 86100/20000000, FPS 1267.
+
+average episode rewards is -172.9438934326172
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 865/200000 episodes, total num timesteps 86600/20000000, FPS 1267.
+
+average episode rewards is -175.48951721191406
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 870/200000 episodes, total num timesteps 87100/20000000, FPS 1267.
+
+average episode rewards is -193.8231201171875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 875/200000 episodes, total num timesteps 87600/20000000, FPS 1268.
+
+average episode rewards is -182.35888671875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 880/200000 episodes, total num timesteps 88100/20000000, FPS 1268.
+
+average episode rewards is -187.49058532714844
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 885/200000 episodes, total num timesteps 88600/20000000, FPS 1268.
+
+average episode rewards is -161.060546875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 890/200000 episodes, total num timesteps 89100/20000000, FPS 1268.
+
+average episode rewards is -205.541015625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 895/200000 episodes, total num timesteps 89600/20000000, FPS 1268.
+
+average episode rewards is -201.2401123046875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 900/200000 episodes, total num timesteps 90100/20000000, FPS 1268.
+
+average episode rewards is -202.98233032226562
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 905/200000 episodes, total num timesteps 90600/20000000, FPS 1268.
+
+average episode rewards is -173.1956787109375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 910/200000 episodes, total num timesteps 91100/20000000, FPS 1268.
+
+average episode rewards is -194.9287567138672
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 915/200000 episodes, total num timesteps 91600/20000000, FPS 1268.
+
+average episode rewards is -168.466064453125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 920/200000 episodes, total num timesteps 92100/20000000, FPS 1268.
+
+average episode rewards is -174.01834106445312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 925/200000 episodes, total num timesteps 92600/20000000, FPS 1268.
+
+average episode rewards is -184.93894958496094
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 930/200000 episodes, total num timesteps 93100/20000000, FPS 1268.
+
+average episode rewards is -193.9589080810547
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 935/200000 episodes, total num timesteps 93600/20000000, FPS 1268.
+
+average episode rewards is -212.9852294921875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 940/200000 episodes, total num timesteps 94100/20000000, FPS 1268.
+
+average episode rewards is -181.5003204345703
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 945/200000 episodes, total num timesteps 94600/20000000, FPS 1268.
+
+average episode rewards is -170.3125457763672
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 950/200000 episodes, total num timesteps 95100/20000000, FPS 1268.
+
+average episode rewards is -178.8871612548828
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 955/200000 episodes, total num timesteps 95600/20000000, FPS 1268.
+
+average episode rewards is -219.93759155273438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 960/200000 episodes, total num timesteps 96100/20000000, FPS 1268.
+
+average episode rewards is -204.42845153808594
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 965/200000 episodes, total num timesteps 96600/20000000, FPS 1268.
+
+average episode rewards is -178.68170166015625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 970/200000 episodes, total num timesteps 97100/20000000, FPS 1268.
+
+average episode rewards is -207.1023406982422
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 975/200000 episodes, total num timesteps 97600/20000000, FPS 1268.
+
+average episode rewards is -175.39752197265625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 980/200000 episodes, total num timesteps 98100/20000000, FPS 1268.
+
+average episode rewards is -186.11358642578125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 985/200000 episodes, total num timesteps 98600/20000000, FPS 1268.
+
+average episode rewards is -197.9964599609375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 990/200000 episodes, total num timesteps 99100/20000000, FPS 1268.
+
+average episode rewards is -198.23202514648438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 995/200000 episodes, total num timesteps 99600/20000000, FPS 1268.
+
+average episode rewards is -161.8495330810547
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1000/200000 episodes, total num timesteps 100100/20000000, FPS 1268.
+
+average episode rewards is -212.033935546875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1005/200000 episodes, total num timesteps 100600/20000000, FPS 1268.
+
+average episode rewards is -171.3686981201172
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1010/200000 episodes, total num timesteps 101100/20000000, FPS 1268.
+
+average episode rewards is -197.2074432373047
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1015/200000 episodes, total num timesteps 101600/20000000, FPS 1268.
+
+average episode rewards is -194.17312622070312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1020/200000 episodes, total num timesteps 102100/20000000, FPS 1268.
+
+average episode rewards is -215.4002685546875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1025/200000 episodes, total num timesteps 102600/20000000, FPS 1268.
+
+average episode rewards is -194.39794921875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1030/200000 episodes, total num timesteps 103100/20000000, FPS 1268.
+
+average episode rewards is -163.67996215820312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1035/200000 episodes, total num timesteps 103600/20000000, FPS 1268.
+
+average episode rewards is -188.2987060546875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1040/200000 episodes, total num timesteps 104100/20000000, FPS 1269.
+
+average episode rewards is -173.4646453857422
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1045/200000 episodes, total num timesteps 104600/20000000, FPS 1268.
+
+average episode rewards is -198.92471313476562
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1050/200000 episodes, total num timesteps 105100/20000000, FPS 1268.
+
+average episode rewards is -176.7457275390625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1055/200000 episodes, total num timesteps 105600/20000000, FPS 1268.
+
+average episode rewards is -167.7239990234375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1060/200000 episodes, total num timesteps 106100/20000000, FPS 1268.
+
+average episode rewards is -167.09913635253906
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1065/200000 episodes, total num timesteps 106600/20000000, FPS 1268.
+
+average episode rewards is -190.86300659179688
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1070/200000 episodes, total num timesteps 107100/20000000, FPS 1268.
+
+average episode rewards is -177.4183349609375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1075/200000 episodes, total num timesteps 107600/20000000, FPS 1268.
+
+average episode rewards is -205.11134338378906
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1080/200000 episodes, total num timesteps 108100/20000000, FPS 1268.
+
+average episode rewards is -183.76980590820312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1085/200000 episodes, total num timesteps 108600/20000000, FPS 1268.
+
+average episode rewards is -190.31521606445312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1090/200000 episodes, total num timesteps 109100/20000000, FPS 1268.
+
+average episode rewards is -176.75091552734375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1095/200000 episodes, total num timesteps 109600/20000000, FPS 1268.
+
+average episode rewards is -213.63255310058594
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1100/200000 episodes, total num timesteps 110100/20000000, FPS 1268.
+
+average episode rewards is -182.6930694580078
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1105/200000 episodes, total num timesteps 110600/20000000, FPS 1268.
+
+average episode rewards is -214.7431182861328
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1110/200000 episodes, total num timesteps 111100/20000000, FPS 1268.
+
+average episode rewards is -185.97076416015625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1115/200000 episodes, total num timesteps 111600/20000000, FPS 1268.
+
+average episode rewards is -180.4679718017578
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1120/200000 episodes, total num timesteps 112100/20000000, FPS 1268.
+
+average episode rewards is -186.7315673828125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1125/200000 episodes, total num timesteps 112600/20000000, FPS 1268.
+
+average episode rewards is -182.6031494140625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1130/200000 episodes, total num timesteps 113100/20000000, FPS 1268.
+
+average episode rewards is -180.55711364746094
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1135/200000 episodes, total num timesteps 113600/20000000, FPS 1269.
+
+average episode rewards is -186.39218139648438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1140/200000 episodes, total num timesteps 114100/20000000, FPS 1269.
+
+average episode rewards is -165.31773376464844
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1145/200000 episodes, total num timesteps 114600/20000000, FPS 1269.
+
+average episode rewards is -180.06588745117188
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1150/200000 episodes, total num timesteps 115100/20000000, FPS 1269.
+
+average episode rewards is -185.4676055908203
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1155/200000 episodes, total num timesteps 115600/20000000, FPS 1269.
+
+average episode rewards is -185.7006378173828
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1160/200000 episodes, total num timesteps 116100/20000000, FPS 1269.
+
+average episode rewards is -177.9442901611328
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1165/200000 episodes, total num timesteps 116600/20000000, FPS 1269.
+
+average episode rewards is -182.18824768066406
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1170/200000 episodes, total num timesteps 117100/20000000, FPS 1269.
+
+average episode rewards is -206.66677856445312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1175/200000 episodes, total num timesteps 117600/20000000, FPS 1269.
+
+average episode rewards is -172.11590576171875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1180/200000 episodes, total num timesteps 118100/20000000, FPS 1269.
+
+average episode rewards is -176.27801513671875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1185/200000 episodes, total num timesteps 118600/20000000, FPS 1269.
+
+average episode rewards is -190.0501251220703
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1190/200000 episodes, total num timesteps 119100/20000000, FPS 1269.
+
+average episode rewards is -174.2692413330078
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1195/200000 episodes, total num timesteps 119600/20000000, FPS 1269.
+
+average episode rewards is -182.00926208496094
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1200/200000 episodes, total num timesteps 120100/20000000, FPS 1269.
+
+average episode rewards is -178.9208526611328
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1205/200000 episodes, total num timesteps 120600/20000000, FPS 1269.
+
+average episode rewards is -187.8745880126953
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1210/200000 episodes, total num timesteps 121100/20000000, FPS 1269.
+
+average episode rewards is -186.43093872070312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1215/200000 episodes, total num timesteps 121600/20000000, FPS 1269.
+
+average episode rewards is -179.2266845703125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1220/200000 episodes, total num timesteps 122100/20000000, FPS 1269.
+
+average episode rewards is -221.05650329589844
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1225/200000 episodes, total num timesteps 122600/20000000, FPS 1269.
+
+average episode rewards is -191.94305419921875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1230/200000 episodes, total num timesteps 123100/20000000, FPS 1269.
+
+average episode rewards is -174.1822509765625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1235/200000 episodes, total num timesteps 123600/20000000, FPS 1269.
+
+average episode rewards is -165.29788208007812
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1240/200000 episodes, total num timesteps 124100/20000000, FPS 1269.
+
+average episode rewards is -173.3888702392578
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1245/200000 episodes, total num timesteps 124600/20000000, FPS 1269.
+
+average episode rewards is -188.67437744140625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1250/200000 episodes, total num timesteps 125100/20000000, FPS 1269.
+
+average episode rewards is -189.455322265625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1255/200000 episodes, total num timesteps 125600/20000000, FPS 1269.
+
+average episode rewards is -196.03465270996094
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1260/200000 episodes, total num timesteps 126100/20000000, FPS 1269.
+
+average episode rewards is -191.1327362060547
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1265/200000 episodes, total num timesteps 126600/20000000, FPS 1269.
+
+average episode rewards is -194.50430297851562
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1270/200000 episodes, total num timesteps 127100/20000000, FPS 1269.
+
+average episode rewards is -182.386962890625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1275/200000 episodes, total num timesteps 127600/20000000, FPS 1269.
+
+average episode rewards is -186.5990753173828
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1280/200000 episodes, total num timesteps 128100/20000000, FPS 1269.
+
+average episode rewards is -169.00758361816406
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1285/200000 episodes, total num timesteps 128600/20000000, FPS 1269.
+
+average episode rewards is -165.00421142578125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1290/200000 episodes, total num timesteps 129100/20000000, FPS 1269.
+
+average episode rewards is -175.651123046875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1295/200000 episodes, total num timesteps 129600/20000000, FPS 1269.
+
+average episode rewards is -162.4279327392578
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1300/200000 episodes, total num timesteps 130100/20000000, FPS 1269.
+
+average episode rewards is -189.568115234375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1305/200000 episodes, total num timesteps 130600/20000000, FPS 1269.
+
+average episode rewards is -228.43966674804688
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1310/200000 episodes, total num timesteps 131100/20000000, FPS 1269.
+
+average episode rewards is -219.52459716796875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1315/200000 episodes, total num timesteps 131600/20000000, FPS 1269.
+
+average episode rewards is -215.7654571533203
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1320/200000 episodes, total num timesteps 132100/20000000, FPS 1269.
+
+average episode rewards is -198.4071807861328
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1325/200000 episodes, total num timesteps 132600/20000000, FPS 1269.
+
+average episode rewards is -172.0712127685547
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1330/200000 episodes, total num timesteps 133100/20000000, FPS 1269.
+
+average episode rewards is -222.1717529296875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1335/200000 episodes, total num timesteps 133600/20000000, FPS 1269.
+
+average episode rewards is -170.69900512695312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1340/200000 episodes, total num timesteps 134100/20000000, FPS 1269.
+
+average episode rewards is -188.7809295654297
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1345/200000 episodes, total num timesteps 134600/20000000, FPS 1269.
+
+average episode rewards is -160.03823852539062
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1350/200000 episodes, total num timesteps 135100/20000000, FPS 1269.
+
+average episode rewards is -224.8430938720703
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1355/200000 episodes, total num timesteps 135600/20000000, FPS 1270.
+
+average episode rewards is -175.0044708251953
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1360/200000 episodes, total num timesteps 136100/20000000, FPS 1270.
+
+average episode rewards is -191.60403442382812
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1365/200000 episodes, total num timesteps 136600/20000000, FPS 1270.
+
+average episode rewards is -194.62332153320312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1370/200000 episodes, total num timesteps 137100/20000000, FPS 1270.
+
+average episode rewards is -196.63726806640625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1375/200000 episodes, total num timesteps 137600/20000000, FPS 1270.
+
+average episode rewards is -174.61651611328125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1380/200000 episodes, total num timesteps 138100/20000000, FPS 1270.
+
+average episode rewards is -177.5789794921875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1385/200000 episodes, total num timesteps 138600/20000000, FPS 1270.
+
+average episode rewards is -197.5035858154297
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1390/200000 episodes, total num timesteps 139100/20000000, FPS 1270.
+
+average episode rewards is -212.2693328857422
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1395/200000 episodes, total num timesteps 139600/20000000, FPS 1270.
+
+average episode rewards is -176.6226348876953
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1400/200000 episodes, total num timesteps 140100/20000000, FPS 1270.
+
+average episode rewards is -169.69415283203125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1405/200000 episodes, total num timesteps 140600/20000000, FPS 1270.
+
+average episode rewards is -199.5699462890625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1410/200000 episodes, total num timesteps 141100/20000000, FPS 1270.
+
+average episode rewards is -199.34945678710938
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1415/200000 episodes, total num timesteps 141600/20000000, FPS 1270.
+
+average episode rewards is -217.71177673339844
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1420/200000 episodes, total num timesteps 142100/20000000, FPS 1270.
+
+average episode rewards is -188.61447143554688
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1425/200000 episodes, total num timesteps 142600/20000000, FPS 1270.
+
+average episode rewards is -190.94158935546875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1430/200000 episodes, total num timesteps 143100/20000000, FPS 1270.
+
+average episode rewards is -177.0554656982422
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1435/200000 episodes, total num timesteps 143600/20000000, FPS 1270.
+
+average episode rewards is -195.6097869873047
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1440/200000 episodes, total num timesteps 144100/20000000, FPS 1270.
+
+average episode rewards is -186.4156494140625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1445/200000 episodes, total num timesteps 144600/20000000, FPS 1270.
+
+average episode rewards is -195.33526611328125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1450/200000 episodes, total num timesteps 145100/20000000, FPS 1270.
+
+average episode rewards is -225.519775390625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1455/200000 episodes, total num timesteps 145600/20000000, FPS 1270.
+
+average episode rewards is -200.16749572753906
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1460/200000 episodes, total num timesteps 146100/20000000, FPS 1270.
+
+average episode rewards is -227.2266387939453
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1465/200000 episodes, total num timesteps 146600/20000000, FPS 1270.
+
+average episode rewards is -226.23965454101562
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1470/200000 episodes, total num timesteps 147100/20000000, FPS 1270.
+
+average episode rewards is -184.09815979003906
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1475/200000 episodes, total num timesteps 147600/20000000, FPS 1270.
+
+average episode rewards is -203.06472778320312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1480/200000 episodes, total num timesteps 148100/20000000, FPS 1270.
+
+average episode rewards is -201.4557647705078
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1485/200000 episodes, total num timesteps 148600/20000000, FPS 1270.
+
+average episode rewards is -183.29852294921875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1490/200000 episodes, total num timesteps 149100/20000000, FPS 1270.
+
+average episode rewards is -200.4075927734375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1495/200000 episodes, total num timesteps 149600/20000000, FPS 1270.
+
+average episode rewards is -195.41197204589844
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1500/200000 episodes, total num timesteps 150100/20000000, FPS 1270.
+
+average episode rewards is -197.64283752441406
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1505/200000 episodes, total num timesteps 150600/20000000, FPS 1270.
+
+average episode rewards is -167.81285095214844
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1510/200000 episodes, total num timesteps 151100/20000000, FPS 1270.
+
+average episode rewards is -219.0456085205078
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1515/200000 episodes, total num timesteps 151600/20000000, FPS 1270.
+
+average episode rewards is -180.4506378173828
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1520/200000 episodes, total num timesteps 152100/20000000, FPS 1270.
+
+average episode rewards is -198.80101013183594
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1525/200000 episodes, total num timesteps 152600/20000000, FPS 1270.
+
+average episode rewards is -212.8479766845703
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1530/200000 episodes, total num timesteps 153100/20000000, FPS 1270.
+
+average episode rewards is -162.16488647460938
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1535/200000 episodes, total num timesteps 153600/20000000, FPS 1270.
+
+average episode rewards is -187.0094757080078
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1540/200000 episodes, total num timesteps 154100/20000000, FPS 1270.
+
+average episode rewards is -187.26754760742188
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1545/200000 episodes, total num timesteps 154600/20000000, FPS 1270.
+
+average episode rewards is -206.2440185546875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1550/200000 episodes, total num timesteps 155100/20000000, FPS 1270.
+
+average episode rewards is -187.4581756591797
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1555/200000 episodes, total num timesteps 155600/20000000, FPS 1270.
+
+average episode rewards is -177.9937744140625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1560/200000 episodes, total num timesteps 156100/20000000, FPS 1270.
+
+average episode rewards is -186.1710205078125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1565/200000 episodes, total num timesteps 156600/20000000, FPS 1270.
+
+average episode rewards is -204.11376953125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1570/200000 episodes, total num timesteps 157100/20000000, FPS 1270.
+
+average episode rewards is -184.826171875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1575/200000 episodes, total num timesteps 157600/20000000, FPS 1270.
+
+average episode rewards is -184.5487518310547
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1580/200000 episodes, total num timesteps 158100/20000000, FPS 1270.
+
+average episode rewards is -193.3852081298828
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1585/200000 episodes, total num timesteps 158600/20000000, FPS 1270.
+
+average episode rewards is -202.3155517578125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1590/200000 episodes, total num timesteps 159100/20000000, FPS 1270.
+
+average episode rewards is -180.60797119140625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1595/200000 episodes, total num timesteps 159600/20000000, FPS 1270.
+
+average episode rewards is -168.19744873046875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1600/200000 episodes, total num timesteps 160100/20000000, FPS 1270.
+
+average episode rewards is -171.8380889892578
+eval average episode rewards of agent: -198.78202831772813
+eval success rate: 0.0
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1605/200000 episodes, total num timesteps 160600/20000000, FPS 1270.
+
+average episode rewards is -238.1470184326172
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1610/200000 episodes, total num timesteps 161100/20000000, FPS 1270.
+
+average episode rewards is -186.6514434814453
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1615/200000 episodes, total num timesteps 161600/20000000, FPS 1270.
+
+average episode rewards is -179.4894256591797
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1620/200000 episodes, total num timesteps 162100/20000000, FPS 1270.
+
+average episode rewards is -193.4007568359375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1625/200000 episodes, total num timesteps 162600/20000000, FPS 1270.
+
+average episode rewards is -181.3580322265625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1630/200000 episodes, total num timesteps 163100/20000000, FPS 1270.
+
+average episode rewards is -175.96348571777344
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1635/200000 episodes, total num timesteps 163600/20000000, FPS 1270.
+
+average episode rewards is -180.4431610107422
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1640/200000 episodes, total num timesteps 164100/20000000, FPS 1270.
+
+average episode rewards is -186.4698028564453
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1645/200000 episodes, total num timesteps 164600/20000000, FPS 1270.
+
+average episode rewards is -201.50901794433594
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1650/200000 episodes, total num timesteps 165100/20000000, FPS 1270.
+
+average episode rewards is -192.9572296142578
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1655/200000 episodes, total num timesteps 165600/20000000, FPS 1270.
+
+average episode rewards is -179.0935516357422
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1660/200000 episodes, total num timesteps 166100/20000000, FPS 1270.
+
+average episode rewards is -184.25575256347656
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1665/200000 episodes, total num timesteps 166600/20000000, FPS 1270.
+
+average episode rewards is -180.72158813476562
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1670/200000 episodes, total num timesteps 167100/20000000, FPS 1270.
+
+average episode rewards is -176.5229034423828
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1675/200000 episodes, total num timesteps 167600/20000000, FPS 1270.
+
+average episode rewards is -174.8960723876953
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1680/200000 episodes, total num timesteps 168100/20000000, FPS 1270.
+
+average episode rewards is -179.32223510742188
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1685/200000 episodes, total num timesteps 168600/20000000, FPS 1270.
+
+average episode rewards is -175.8909912109375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1690/200000 episodes, total num timesteps 169100/20000000, FPS 1270.
+
+average episode rewards is -171.1656494140625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1695/200000 episodes, total num timesteps 169600/20000000, FPS 1270.
+
+average episode rewards is -179.0184326171875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1700/200000 episodes, total num timesteps 170100/20000000, FPS 1270.
+
+average episode rewards is -174.4824981689453
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1705/200000 episodes, total num timesteps 170600/20000000, FPS 1270.
+
+average episode rewards is -197.19906616210938
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1710/200000 episodes, total num timesteps 171100/20000000, FPS 1270.
+
+average episode rewards is -187.86244201660156
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1715/200000 episodes, total num timesteps 171600/20000000, FPS 1270.
+
+average episode rewards is -185.59291076660156
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1720/200000 episodes, total num timesteps 172100/20000000, FPS 1270.
+
+average episode rewards is -182.3625030517578
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1725/200000 episodes, total num timesteps 172600/20000000, FPS 1270.
+
+average episode rewards is -241.72900390625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1730/200000 episodes, total num timesteps 173100/20000000, FPS 1270.
+
+average episode rewards is -169.23873901367188
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1735/200000 episodes, total num timesteps 173600/20000000, FPS 1270.
+
+average episode rewards is -197.59095764160156
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1740/200000 episodes, total num timesteps 174100/20000000, FPS 1270.
+
+average episode rewards is -194.3204803466797
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1745/200000 episodes, total num timesteps 174600/20000000, FPS 1270.
+
+average episode rewards is -192.0111846923828
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1750/200000 episodes, total num timesteps 175100/20000000, FPS 1270.
+
+average episode rewards is -181.046142578125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1755/200000 episodes, total num timesteps 175600/20000000, FPS 1270.
+
+average episode rewards is -197.2017822265625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1760/200000 episodes, total num timesteps 176100/20000000, FPS 1270.
+
+average episode rewards is -198.3953857421875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1765/200000 episodes, total num timesteps 176600/20000000, FPS 1270.
+
+average episode rewards is -162.43907165527344
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1770/200000 episodes, total num timesteps 177100/20000000, FPS 1270.
+
+average episode rewards is -194.8681640625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1775/200000 episodes, total num timesteps 177600/20000000, FPS 1270.
+
+average episode rewards is -203.8870391845703
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1780/200000 episodes, total num timesteps 178100/20000000, FPS 1270.
+
+average episode rewards is -176.2852020263672
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1785/200000 episodes, total num timesteps 178600/20000000, FPS 1270.
+
+average episode rewards is -203.00633239746094
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1790/200000 episodes, total num timesteps 179100/20000000, FPS 1270.
+
+average episode rewards is -195.4033966064453
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1795/200000 episodes, total num timesteps 179600/20000000, FPS 1270.
+
+average episode rewards is -207.0858917236328
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1800/200000 episodes, total num timesteps 180100/20000000, FPS 1270.
+
+average episode rewards is -158.92874145507812
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1805/200000 episodes, total num timesteps 180600/20000000, FPS 1270.
+
+average episode rewards is -180.5242919921875
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1810/200000 episodes, total num timesteps 181100/20000000, FPS 1270.
+
+average episode rewards is -201.40028381347656
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1815/200000 episodes, total num timesteps 181600/20000000, FPS 1270.
+
+average episode rewards is -197.91954040527344
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1820/200000 episodes, total num timesteps 182100/20000000, FPS 1270.
+
+average episode rewards is -219.98367309570312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1825/200000 episodes, total num timesteps 182600/20000000, FPS 1270.
+
+average episode rewards is -194.82876586914062
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1830/200000 episodes, total num timesteps 183100/20000000, FPS 1270.
+
+average episode rewards is -165.56509399414062
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1835/200000 episodes, total num timesteps 183600/20000000, FPS 1270.
+
+average episode rewards is -186.4279327392578
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1840/200000 episodes, total num timesteps 184100/20000000, FPS 1270.
+
+average episode rewards is -184.29010009765625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1845/200000 episodes, total num timesteps 184600/20000000, FPS 1270.
+
+average episode rewards is -184.2561798095703
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1850/200000 episodes, total num timesteps 185100/20000000, FPS 1270.
+
+average episode rewards is -194.69967651367188
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1855/200000 episodes, total num timesteps 185600/20000000, FPS 1270.
+
+average episode rewards is -190.5597381591797
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1860/200000 episodes, total num timesteps 186100/20000000, FPS 1270.
+
+average episode rewards is -202.19679260253906
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1865/200000 episodes, total num timesteps 186600/20000000, FPS 1270.
+
+average episode rewards is -179.49722290039062
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1870/200000 episodes, total num timesteps 187100/20000000, FPS 1270.
+
+average episode rewards is -202.9195098876953
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1875/200000 episodes, total num timesteps 187600/20000000, FPS 1270.
+
+average episode rewards is -215.273193359375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1880/200000 episodes, total num timesteps 188100/20000000, FPS 1270.
+
+average episode rewards is -186.8743896484375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1885/200000 episodes, total num timesteps 188600/20000000, FPS 1270.
+
+average episode rewards is -172.67213439941406
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1890/200000 episodes, total num timesteps 189100/20000000, FPS 1270.
+
+average episode rewards is -190.5535125732422
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1895/200000 episodes, total num timesteps 189600/20000000, FPS 1270.
+
+average episode rewards is -169.88597106933594
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1900/200000 episodes, total num timesteps 190100/20000000, FPS 1270.
+
+average episode rewards is -207.80299377441406
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1905/200000 episodes, total num timesteps 190600/20000000, FPS 1270.
+
+average episode rewards is -180.20724487304688
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1910/200000 episodes, total num timesteps 191100/20000000, FPS 1270.
+
+average episode rewards is -170.2092742919922
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1915/200000 episodes, total num timesteps 191600/20000000, FPS 1270.
+
+average episode rewards is -195.11021423339844
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1920/200000 episodes, total num timesteps 192100/20000000, FPS 1270.
+
+average episode rewards is -197.71981811523438
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1925/200000 episodes, total num timesteps 192600/20000000, FPS 1270.
+
+average episode rewards is -193.0953369140625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1930/200000 episodes, total num timesteps 193100/20000000, FPS 1270.
+
+average episode rewards is -188.1611328125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1935/200000 episodes, total num timesteps 193600/20000000, FPS 1270.
+
+average episode rewards is -214.9921112060547
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1940/200000 episodes, total num timesteps 194100/20000000, FPS 1270.
+
+average episode rewards is -172.1785125732422
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1945/200000 episodes, total num timesteps 194600/20000000, FPS 1270.
+
+average episode rewards is -175.35189819335938
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1950/200000 episodes, total num timesteps 195100/20000000, FPS 1270.
+
+average episode rewards is -171.9581756591797
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1955/200000 episodes, total num timesteps 195600/20000000, FPS 1270.
+
+average episode rewards is -187.5009765625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1960/200000 episodes, total num timesteps 196100/20000000, FPS 1270.
+
+average episode rewards is -189.61256408691406
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1965/200000 episodes, total num timesteps 196600/20000000, FPS 1270.
+
+average episode rewards is -178.6747283935547
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1970/200000 episodes, total num timesteps 197100/20000000, FPS 1270.
+
+average episode rewards is -169.0467071533203
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1975/200000 episodes, total num timesteps 197600/20000000, FPS 1270.
+
+average episode rewards is -200.94142150878906
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1980/200000 episodes, total num timesteps 198100/20000000, FPS 1270.
+
+average episode rewards is -151.3920135498047
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1985/200000 episodes, total num timesteps 198600/20000000, FPS 1270.
+
+average episode rewards is -181.5310821533203
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1990/200000 episodes, total num timesteps 199100/20000000, FPS 1270.
+
+average episode rewards is -187.83897399902344
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 1995/200000 episodes, total num timesteps 199600/20000000, FPS 1270.
+
+average episode rewards is -190.84124755859375
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 2000/200000 episodes, total num timesteps 200100/20000000, FPS 1270.
+
+average episode rewards is -191.63438415527344
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 2005/200000 episodes, total num timesteps 200600/20000000, FPS 1270.
+
+average episode rewards is -199.4702911376953
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 2010/200000 episodes, total num timesteps 201100/20000000, FPS 1270.
+
+average episode rewards is -172.28298950195312
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 2015/200000 episodes, total num timesteps 201600/20000000, FPS 1270.
+
+average episode rewards is -198.7658233642578
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 2020/200000 episodes, total num timesteps 202100/20000000, FPS 1270.
+
+average episode rewards is -181.87535095214844
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 2025/200000 episodes, total num timesteps 202600/20000000, FPS 1270.
+
+average episode rewards is -175.63418579101562
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 2030/200000 episodes, total num timesteps 203100/20000000, FPS 1270.
+
+average episode rewards is -212.3017578125
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 2035/200000 episodes, total num timesteps 203600/20000000, FPS 1270.
+
+average episode rewards is -193.7515869140625
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 2040/200000 episodes, total num timesteps 204100/20000000, FPS 1270.
+
+average episode rewards is -222.1749725341797
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 2045/200000 episodes, total num timesteps 204600/20000000, FPS 1270.
+
+average episode rewards is -183.7027130126953
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 2050/200000 episodes, total num timesteps 205100/20000000, FPS 1270.
+
+average episode rewards is -193.4141082763672
+
+ Scenario simple_spread Algo rmappo Exp worker4 updates 2055/200000 episodes, total num timesteps 205600/20000000, FPS 1270.
+
+average episode rewards is -198.9078826904297
