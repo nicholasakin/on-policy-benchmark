@@ -1,0 +1,31 @@
+u are choosing to use rmappo, we set use_recurrent_policy to be True
+choose to use cpu...
+obs_space:  [Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (18,), float32), Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (18,), float32), Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (18,), float32)]
+share_obs_space:  [Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (54,), float32), Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (54,), float32), Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (54,), float32)]
+act_space:  [Discrete(5), Discrete(5), Discrete(5)]
+
+ Scenario simple_spread Algo rmappo Exp smoke_20260925T172533Z_91c561_mappo_w4_seed91 updates 0/2 episodes, total num timesteps 100/200, FPS 972.
+
+average episode rewards is -219.35203552246094
+eval average episode rewards of agent: -203.2236389089936
+eval success rate: 0.0
+eval average episode rewards of agent: -221.38290832121956
+eval success rate: 0.0

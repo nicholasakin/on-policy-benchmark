@@ -12,11 +12,11 @@
 #                Controlled here by USE_GPU; leave USE_GPU=1 (default) for GPU.
 #   --use_wandb  action='store_false', default True (wandb). Passing it logs to
 #                tensorboard instead. Kept on by default here so you don't need a
-#                wandb login; set USE_WANDB=0 to actually use wandb.
+#                wandb login; set USE_WANDB=1 to actually use wandb.
 #
 # Every knob is overridable via environment variable, e.g.:
 #   NUM_AGENTS=2 NUM_LANDMARKS=2 NUM_ENV_STEPS=2000000 SEED=2 ./run_repro.sh
-#   ALGO=ippo EXPERIMENT_NAME=ippo_check ./run_repro.sh
+#   ALGO=rmappo EXTRA_ARGS="--use_centralized_V" EXPERIMENT_NAME=ippo_check ./run_repro.sh
 #   EXTRA_ARGS="--use_valuenorm" ./run_repro.sh
 set -euo pipefail
 cd "$(dirname "$0")/onpolicy/scripts/train"

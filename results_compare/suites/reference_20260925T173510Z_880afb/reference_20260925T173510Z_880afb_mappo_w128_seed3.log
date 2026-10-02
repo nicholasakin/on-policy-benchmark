@@ -1,0 +1,305 @@
+u are choosing to use rmappo, we set use_recurrent_policy to be True
+choose to use gpu...
+obs_space:  [Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (18,), float32), Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (18,), float32), Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (18,), float32)]
+share_obs_space:  [Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (54,), float32), Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (54,), float32), Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf
+ -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf
+ inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf], (54,), float32)]
+act_space:  [Discrete(5), Discrete(5), Discrete(5)]
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 0/6250 episodes, total num timesteps 3200/20000000, FPS 5447.
+
+average episode rewards is -217.92860412597656
+eval average episode rewards of agent: -196.87745854964305
+eval success rate: 0.0
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 5/6250 episodes, total num timesteps 19200/20000000, FPS 8204.
+
+average episode rewards is -190.8395233154297
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 10/6250 episodes, total num timesteps 35200/20000000, FPS 8834.
+
+average episode rewards is -186.927978515625
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 15/6250 episodes, total num timesteps 51200/20000000, FPS 9097.
+
+average episode rewards is -179.42453002929688
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 20/6250 episodes, total num timesteps 67200/20000000, FPS 9221.
+
+average episode rewards is -179.41177368164062
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 25/6250 episodes, total num timesteps 83200/20000000, FPS 9301.
+
+average episode rewards is -178.9441375732422
+eval average episode rewards of agent: -176.13784225666075
+eval success rate: 0.0
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 30/6250 episodes, total num timesteps 99200/20000000, FPS 9283.
+
+average episode rewards is -171.94717407226562
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 35/6250 episodes, total num timesteps 115200/20000000, FPS 9325.
+
+average episode rewards is -169.63819885253906
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 40/6250 episodes, total num timesteps 131200/20000000, FPS 9333.
+
+average episode rewards is -170.7927703857422
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 45/6250 episodes, total num timesteps 147200/20000000, FPS 9355.
+
+average episode rewards is -170.144775390625
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 50/6250 episodes, total num timesteps 163200/20000000, FPS 9381.
+
+average episode rewards is -169.36158752441406
+eval average episode rewards of agent: -175.79979698433274
+eval success rate: 0.05
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 55/6250 episodes, total num timesteps 179200/20000000, FPS 9367.
+
+average episode rewards is -164.40896606445312
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 60/6250 episodes, total num timesteps 195200/20000000, FPS 9369.
+
+average episode rewards is -163.1075439453125
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 65/6250 episodes, total num timesteps 211200/20000000, FPS 9329.
+
+average episode rewards is -163.51406860351562
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 70/6250 episodes, total num timesteps 227200/20000000, FPS 9342.
+
+average episode rewards is -164.57614135742188
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 75/6250 episodes, total num timesteps 243200/20000000, FPS 9344.
+
+average episode rewards is -161.73902893066406
+eval average episode rewards of agent: -159.21271706407427
+eval success rate: 0.0
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 80/6250 episodes, total num timesteps 259200/20000000, FPS 9347.
+
+average episode rewards is -157.07521057128906
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 85/6250 episodes, total num timesteps 275200/20000000, FPS 9360.
+
+average episode rewards is -158.73263549804688
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 90/6250 episodes, total num timesteps 291200/20000000, FPS 9365.
+
+average episode rewards is -154.7893524169922
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 95/6250 episodes, total num timesteps 307200/20000000, FPS 9367.
+
+average episode rewards is -154.17727661132812
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 100/6250 episodes, total num timesteps 323200/20000000, FPS 9371.
+
+average episode rewards is -156.86538696289062
+eval average episode rewards of agent: -152.55414614113903
+eval success rate: 0.05
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 105/6250 episodes, total num timesteps 339200/20000000, FPS 9361.
+
+average episode rewards is -157.92843627929688
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 110/6250 episodes, total num timesteps 355200/20000000, FPS 9364.
+
+average episode rewards is -153.79681396484375
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 115/6250 episodes, total num timesteps 371200/20000000, FPS 9367.
+
+average episode rewards is -154.0546875
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 120/6250 episodes, total num timesteps 387200/20000000, FPS 9375.
+
+average episode rewards is -152.128662109375
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 125/6250 episodes, total num timesteps 403200/20000000, FPS 9351.
+
+average episode rewards is -155.80337524414062
+eval average episode rewards of agent: -151.00667022700583
+eval success rate: 0.1
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 130/6250 episodes, total num timesteps 419200/20000000, FPS 9343.
+
+average episode rewards is -153.14930725097656
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 135/6250 episodes, total num timesteps 435200/20000000, FPS 9354.
+
+average episode rewards is -153.00128173828125
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 140/6250 episodes, total num timesteps 451200/20000000, FPS 9362.
+
+average episode rewards is -150.7495880126953
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 145/6250 episodes, total num timesteps 467200/20000000, FPS 9362.
+
+average episode rewards is -150.6429443359375
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 150/6250 episodes, total num timesteps 483200/20000000, FPS 9362.
+
+average episode rewards is -151.23391723632812
+eval average episode rewards of agent: -155.79574933205396
+eval success rate: 0.0
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 155/6250 episodes, total num timesteps 499200/20000000, FPS 9358.
+
+average episode rewards is -151.9340362548828
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 160/6250 episodes, total num timesteps 515200/20000000, FPS 9364.
+
+average episode rewards is -150.17831420898438
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 165/6250 episodes, total num timesteps 531200/20000000, FPS 9366.
+
+average episode rewards is -152.99488830566406
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 170/6250 episodes, total num timesteps 547200/20000000, FPS 9368.
+
+average episode rewards is -149.17010498046875
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 175/6250 episodes, total num timesteps 563200/20000000, FPS 9374.
+
+average episode rewards is -150.34088134765625
+eval average episode rewards of agent: -153.58243353716117
+eval success rate: 0.0
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 180/6250 episodes, total num timesteps 579200/20000000, FPS 9346.
+
+average episode rewards is -152.59405517578125
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 185/6250 episodes, total num timesteps 595200/20000000, FPS 9353.
+
+average episode rewards is -150.61309814453125
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 190/6250 episodes, total num timesteps 611200/20000000, FPS 9359.
+
+average episode rewards is -149.21823120117188
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 195/6250 episodes, total num timesteps 627200/20000000, FPS 9361.
+
+average episode rewards is -151.13958740234375
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 200/6250 episodes, total num timesteps 643200/20000000, FPS 9362.
+
+average episode rewards is -150.6351776123047
+eval average episode rewards of agent: -152.6010655237378
+eval success rate: 0.05
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 205/6250 episodes, total num timesteps 659200/20000000, FPS 9360.
+
+average episode rewards is -147.9956512451172
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 210/6250 episodes, total num timesteps 675200/20000000, FPS 9364.
+
+average episode rewards is -149.1775665283203
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 215/6250 episodes, total num timesteps 691200/20000000, FPS 9368.
+
+average episode rewards is -147.9534912109375
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 220/6250 episodes, total num timesteps 707200/20000000, FPS 9369.
+
+average episode rewards is -148.0564422607422
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 225/6250 episodes, total num timesteps 723200/20000000, FPS 9374.
+
+average episode rewards is -147.43748474121094
+eval average episode rewards of agent: -147.48888298818784
+eval success rate: 0.0
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 230/6250 episodes, total num timesteps 739200/20000000, FPS 9372.
+
+average episode rewards is -146.37918090820312
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 235/6250 episodes, total num timesteps 755200/20000000, FPS 9376.
+
+average episode rewards is -149.3865966796875
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 240/6250 episodes, total num timesteps 771200/20000000, FPS 9362.
+
+average episode rewards is -145.5159912109375
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 245/6250 episodes, total num timesteps 787200/20000000, FPS 9365.
+
+average episode rewards is -144.48655700683594
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 250/6250 episodes, total num timesteps 803200/20000000, FPS 9367.
+
+average episode rewards is -147.5092315673828
+eval average episode rewards of agent: -147.80741270092602
+eval success rate: 0.05
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 255/6250 episodes, total num timesteps 819200/20000000, FPS 9364.
+
+average episode rewards is -146.63575744628906
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 260/6250 episodes, total num timesteps 835200/20000000, FPS 9368.
+
+average episode rewards is -144.79029846191406
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 265/6250 episodes, total num timesteps 851200/20000000, FPS 9371.
+
+average episode rewards is -142.9521484375
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 270/6250 episodes, total num timesteps 867200/20000000, FPS 9373.
+
+average episode rewards is -144.6775665283203
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 275/6250 episodes, total num timesteps 883200/20000000, FPS 9372.
+
+average episode rewards is -143.5206298828125
+eval average episode rewards of agent: -147.61666461339868
+eval success rate: 0.1
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 280/6250 episodes, total num timesteps 899200/20000000, FPS 9370.
+
+average episode rewards is -141.03416442871094
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 285/6250 episodes, total num timesteps 915200/20000000, FPS 9370.
+
+average episode rewards is -144.8385009765625
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 290/6250 episodes, total num timesteps 931200/20000000, FPS 9367.
+
+average episode rewards is -143.94500732421875
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 295/6250 episodes, total num timesteps 947200/20000000, FPS 9372.
+
+average episode rewards is -141.84359741210938
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 300/6250 episodes, total num timesteps 963200/20000000, FPS 9362.
+
+average episode rewards is -142.30523681640625
+eval average episode rewards of agent: -135.6407905506881
+eval success rate: 0.15
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 305/6250 episodes, total num timesteps 979200/20000000, FPS 9360.
+
+average episode rewards is -140.98480224609375
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 310/6250 episodes, total num timesteps 995200/20000000, FPS 9341.
+
+average episode rewards is -140.8249969482422
+
+ Scenario simple_spread Algo rmappo Exp reference_20260925T173510Z_880afb_mappo_w128_seed3 updates 315/6250 episodes, total num timesteps 1011200/20000000, FPS 9330.
+
+average episode rewards is -141.7703094482422

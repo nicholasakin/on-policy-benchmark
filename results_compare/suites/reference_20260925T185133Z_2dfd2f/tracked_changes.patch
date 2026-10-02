@@ -1,0 +1,127 @@
+diff --git a/EXPERIMENTS.md b/EXPERIMENTS.md
+index cd98b9e..0931640 100644
+--- a/EXPERIMENTS.md
++++ b/EXPERIMENTS.md
+@@ -107,7 +107,7 @@ Several argparse flags use `store_false`:
+ | `--use_centralized_V` | Disable the centralized critic |
+ | `--use_valuenorm` | Disable value normalization |
+ 
+-Some comments in `run_repro.sh` are stale: **do not use `ALGO=ippo`**, which is rejected by the current parser. Use `ALGO=rmappo` plus `EXTRA_ARGS="--use_centralized_V"`. For the wrapper variables, `USE_WANDB=0` means TensorBoard and `USE_WANDB=1` means W&B. `ALGO=mappo` selects a feed-forward network and does not match the recurrent reference condition.
++**Do not use `ALGO=ippo`**, which is rejected by the current parser. Use `ALGO=rmappo` plus `EXTRA_ARGS="--use_centralized_V"`. For the wrapper variables, `USE_WANDB=0` means TensorBoard and `USE_WANDB=1` means W&B. `ALGO=mappo` selects a feed-forward network and does not match the recurrent reference condition.
+ 
+ ## Training
+ 
+@@ -184,7 +184,7 @@ for seed in $(seq 1 10); do
+ done
+ ```
+ 
+-For future reports, save resolved arguments, seed, git commit and diff, package versions, device information, and completion status with each run. Current TensorBoard-only launches do not persist a complete configuration manifest. Repeating a command starts a new run directory; it does not automatically resume the previous run. Checkpoints overwrite `actor.pt` and `critic.pt` during training, so they do not constitute a historical checkpoint archive.
++For future reports, save resolved arguments, seed, git commit and diff, package versions, device information, and completion status with each run. New MPE launches save resolved arguments in `config.json`; historical runs may lack this file. The suite launcher below additionally captures code and package metadata. Repeating a command starts a new run directory; it does not automatically resume the previous run. Checkpoints overwrite `actor.pt` and `critic.pt` during training, so they do not constitute a historical checkpoint archive.
+ 
+ ## Viewing results
+ 
+@@ -230,3 +230,64 @@ The repository ignores training `results` directories. Share or archive the raw
+ 3. Keep the four-worker conditions as a separate batch-size/update-frequency ablation.
+ 4. Preserve run metadata and metric-version information so instrumentation changes cannot be confused with policy improvements.
+ 5. Evaluate additional tasks and off-policy baselines before extending the conclusion beyond Simple Spread.
++
++## Next experiment suites: two-GPU launcher
++
++Use [run_experiments.sh](run_experiments.sh), backed by [run_experiments.py](run_experiments.py), for new runs. It schedules one job per GPU and defaults to devices 0 and 1. Each invocation creates a unique batch name, so historical results and stdout logs are not overwritten.
++
++| Suite | Question | Default conditions | Total budget |
++| --- | --- | --- | ---: |
++| `reference` | Do recurrent MAPPO and IPPO reproduce Spread across seeds? | 128 workers; MAPPO and IPPO; seeds 1, 2, 3 | 6 × 20M = 120M steps |
++| `workers` | Where does learning improve as rollout batch size increases? | 4, 16, 32 workers; both algorithms; seeds 1, 2, 3 | 18 × 20M = 360M steps |
++| `smoke` | Does training, evaluation, saving, and scheduling work? | 4 workers; both algorithms; 200 steps each | 1,200 steps for default three seeds |
++
++Run `reference` first. Run `workers` afterward if the reference comparison is satisfactory; combine its results with the 128-worker reference to assess the worker-count trend. This still changes batch size and update frequency together. Three seeds are an initial replication check; use `--seeds 1 2 3 4 5 6 7 8 9 10` for the paper's ten-seed scale.
++
++Preview commands without training or writing files:
++
++```bash
++./run_experiments.sh --suite reference --gpus 0 1 --dry-run
++```
++
++Check both GPUs with two tiny runs (not a performance experiment):
++
++```bash
++./run_experiments.sh --suite smoke --seeds 1 --gpus 0 1
++```
++
++Start the reference suite in the foreground:
++
++```bash
++./run_experiments.sh --suite reference --seeds 1 2 3 --gpus 0 1
++```
++
++Or keep it running after disconnecting, with a unique driver log:
++
++```bash
++mkdir -p results_compare/suites
++DRIVER_LOG=$(mktemp results_compare/suites/reference_driver.XXXXXX.log)
++nohup ./run_experiments.sh --suite reference --seeds 1 2 3 --gpus 0 1 \
++  > "$DRIVER_LOG" 2>&1 &
++SUITE_PID=$!
++echo "Launcher PID: $SUITE_PID; driver log: $DRIVER_LOG"
++```
++
++To stop that launcher and its active training process groups, use `kill -TERM "$SUITE_PID"` from the same shell, or the printed PID. In the foreground, use Ctrl-C. Do not use the same GPUs for a second full suite concurrently.
++
++Optional worker-count sweep:
++
++```bash
++./run_experiments.sh --suite workers --seeds 1 2 3 --gpus 0 1
++```
++
++`--gpus 0` schedules sequentially if CPU or memory pressure is too high. Two reference jobs together use **256 training subprocess environments plus 40 evaluation environments**. CPU contention may limit throughput even when GPU memory is available. `--cpu` provides one CPU slot for diagnostics; `--steps` changes the per-run budget. Budgets are rounded down to complete rollouts and recorded in the manifest.
++
++Every batch writes `results_compare/suites/<batch>/` containing:
++
++- `manifest.json`: commands, seeds, worker counts, requested/actual step budgets, GPU assignment, result paths, code revision, working-tree status, timestamps, and per-job exit status.
++- Separate `<experiment>.log` files, a package snapshot, tracked-code diff, and a copy of the launcher.
++- Training output under the usual `onpolicy/scripts/results/MPE/simple_spread/rmappo/<experiment>/run1/` directory. New MPE runs save resolved arguments and the selected device in `config.json` alongside `logs/` and `models/`.
++
++A job is marked `completed` when the training process exits successfully, `failed` on a nonzero exit, or `interrupted` when cancelled. Failed jobs do not prevent other queued jobs from running; the suite returns nonzero if any job did not complete. Interrupted jobs restart from scratch in a new batch when relaunched; automatic checkpoint resume is not implemented. GPU preflight errors stop the suite before training, rather than silently falling back to CPU.
++
++View these results in the same TensorBoard instance described above. Batch IDs, algorithm labels, worker counts, and seeds are included in experiment names. The old static audit plot does not update automatically. Inspect per-seed curves first, then compare seed-level summaries at matched budgets; do not treat evaluation points within one run as independent training seeds.
+diff --git a/onpolicy/scripts/train/train_mpe.py b/onpolicy/scripts/train/train_mpe.py
+index 9bd61f1..4344bd5 100644
+--- a/onpolicy/scripts/train/train_mpe.py
++++ b/onpolicy/scripts/train/train_mpe.py
+@@ -1,5 +1,6 @@
+ #!/usr/bin/env python
+ import sys
++import json
+ import os
+ import wandb
+ import socket
+@@ -130,6 +131,10 @@ def main(args):
+     setproctitle.setproctitle(str(all_args.algorithm_name) + "-" + \
+         str(all_args.env_name) + "-" + str(all_args.experiment_name) + "@" + str(all_args.user_name))
+ 
++    # Persist resolved settings after algorithm selection and device fallback.
++    with open(run_dir / "config.json", "w") as config_file:
++        json.dump({"args": vars(all_args), "device": str(device)}, config_file, indent=2)
++
+     # seed
+     torch.manual_seed(all_args.seed)
+     torch.cuda.manual_seed_all(all_args.seed)
+diff --git a/run_repro.sh b/run_repro.sh
+index f497f43..7e9780f 100755
+--- a/run_repro.sh
++++ b/run_repro.sh
+@@ -12,11 +12,11 @@
+ #                Controlled here by USE_GPU; leave USE_GPU=1 (default) for GPU.
+ #   --use_wandb  action='store_false', default True (wandb). Passing it logs to
+ #                tensorboard instead. Kept on by default here so you don't need a
+-#                wandb login; set USE_WANDB=0 to actually use wandb.
++#                wandb login; set USE_WANDB=1 to actually use wandb.
+ #
+ # Every knob is overridable via environment variable, e.g.:
+ #   NUM_AGENTS=2 NUM_LANDMARKS=2 NUM_ENV_STEPS=2000000 SEED=2 ./run_repro.sh
+-#   ALGO=ippo EXPERIMENT_NAME=ippo_check ./run_repro.sh
++#   ALGO=rmappo EXTRA_ARGS="--use_centralized_V" EXPERIMENT_NAME=ippo_check ./run_repro.sh
+ #   EXTRA_ARGS="--use_valuenorm" ./run_repro.sh
+ set -euo pipefail
+ cd "$(dirname "$0")/onpolicy/scripts/train"

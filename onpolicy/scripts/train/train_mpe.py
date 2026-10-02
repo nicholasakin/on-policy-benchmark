@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import sys
+import json
 import os
 import wandb
 import socket
@@ -129,6 +130,10 @@ def main(args):
 
     setproctitle.setproctitle(str(all_args.algorithm_name) + "-" + \
         str(all_args.env_name) + "-" + str(all_args.experiment_name) + "@" + str(all_args.user_name))
+
+    # Persist resolved settings after algorithm selection and device fallback.
+    with open(run_dir / "config.json", "w") as config_file:
+        json.dump({"args": vars(all_args), "device": str(device)}, config_file, indent=2)
 
     # seed
     torch.manual_seed(all_args.seed)
